@@ -31,6 +31,13 @@ app.get('/campgrounds', async(req, res) => {
    res.render('campgrounds/index',{campgrounds})
 })
 
+app.get('/campgrounds/:id', async(req, res) => {
+    res.render('campgrounds/show');
+ })
+ 
+
+
+
 // Server Set up on PORT 3000
 app.listen(3000,()=>{
     console.log("Server Started on PORT 3000.......");
