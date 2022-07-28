@@ -22,7 +22,7 @@ db.once("open",()=>{
 app.set('view engine','ejs');
 app.set('views',path.join(__dirname,'views'));
 
-//POST method body parse
+//POST method body parse  
 app.use(express.urlencoded({extended: true}));
 //method override
 app.use(methodOverride('_method'));
